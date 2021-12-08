@@ -1,53 +1,39 @@
-package com.ec.edu.dependencias;
+package com.ec.edu.inyeccion.dependencias;
 
 public class Matricula {
 	
 	private String semestre;
-	private int anio;
-	
+	private int anio;	
 	private Estudiante estudiante;
+	private Direccion direccion;
 	
-	public String matricular(String nombre, String apellido, String calle, String numero, int tipo) {
+	public Matricula( Estudiante estudiante, Direccion direccion) {
+		this.estudiante=estudiante;
+		this.direccion=direccion;
 		
-		if(tipo==1) {
-			
-			this.estudiante=new Estudiante();
-											
-		}else if (tipo==2) {
-			
-			this.estudiante=new EstudianteOdontologia();
-			
-		}else if (tipo==3) {
-			
-			this.estudiante=new EstudianteArquitectura();	
-			
-			
-		} else {
-			
-			this.estudiante=new EstudianteAdministracion();
-			
-		}
-		
+	}
+	
+	public String matricular(String nombre, String apellido, String calle, String numero) {
 		this.estudiante.setNombre(nombre);
 		this.estudiante.setApellido(apellido);
 		
 		
+		this.direccion.setCallePrincipal(calle);
+		this.direccion.setNumeracion(numero);
 		
-		Direccion direccion= new Direccion();
-		direccion.setCallePrincipal(calle);
-		direccion.setNumeracion(numero);
 		this.estudiante.setDireccion(direccion);
+		
 		//logia para guardar en la base de datos los datos de la matricula
 		//y el estudiante
 		
-		//se imprimer el espacio de memoria
 		System.out.println(this.estudiante);
 		this.estudiante.pagarServiPagos(nombre);
 		return "Estudiante Guardado con exito";
-		
-		
-		
 	}
+	
+	
+	
+	
 	
 	//Metodos SET y GET
 	public String getSemestre() {
@@ -67,6 +53,14 @@ public class Matricula {
 	}
 	public void setEstudiante(Estudiante estudiante) {
 		this.estudiante = estudiante;
+	}
+
+	public Direccion getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
 	}
 	
 	 

@@ -1,16 +1,14 @@
-package com.ec.edu.dependencias;
+package com.ec.edu.inyeccion.dependencias;
 
 import java.util.Scanner;
 
-public class MainUCE {
+public class MainFramework {
 
 	public static void main(String[] args) {
-		
-		
+		// TODO Auto-generated method stub
+
+
 		Scanner scanner= new Scanner(System.in);
-		Scanner numero= new Scanner (System.in);
-		
-		
 		System.out.println("Ingrese Nombre:");
 		String nombre=scanner.nextLine();
 		
@@ -23,20 +21,17 @@ public class MainUCE {
 		System.out.println("Ingrese Numeracion:");
 		String numeracion=scanner.nextLine();
 		
-		System.out.println("Ingrese Tipo:");
-		int tipo=numero.nextInt();
 		
-		// TODO Auto-generated method stub
-
-		Matricula matricula= new Matricula();
+		//El framework me inyecta las dependencias Estudiante y Direccion
+		Matricula matricula= new Matricula(new Estudiante(), new Direccion());
+		
+		
 		matricula.setAnio(2015);
 		matricula.setSemestre("Sexto");
 		
-		String mensaje=matricula.matricular(nombre, apellido, calle, numeracion,tipo);
+		String mensaje=matricula.matricular(nombre, apellido, calle, numeracion);
 		
 		System.out.println(mensaje);
-		
-		
 	}
 
 }
