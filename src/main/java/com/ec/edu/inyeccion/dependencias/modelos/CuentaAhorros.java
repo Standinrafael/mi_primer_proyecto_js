@@ -5,8 +5,12 @@ public class CuentaAhorros implements ICuenta {
 	private String numeroAhorro;
 	private int monto;
 	
+	@Override
+	public void calcularDescuento(String numero) {
+		// TODO Auto-generated method stub
+		System.out.println("Se calcula el descuento de:"+ numero);
+	}
 		
-
 	@Override
 	public void calcularBeneficio() {
 		// TODO Auto-generated method stub
@@ -27,11 +31,7 @@ public class CuentaAhorros implements ICuenta {
 			this.monto = monto;
 		}
 
-		@Override
-		public void calcularDescuento(String numero) {
-			// TODO Auto-generated method stub
-			System.out.println("Se calcula el descuento de:"+ numero);
-		}
+		
 	
 	
 	
