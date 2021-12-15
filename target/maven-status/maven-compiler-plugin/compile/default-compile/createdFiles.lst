@@ -10,12 +10,14 @@ com\ec\edu\cuenta\CuentaCorriente.class
 com\ec\edu\inyeccion\dependencias\modelos\CuentaAhorros.class
 com\ec\edu\dependencias\Estudiante.class
 com\ec\edu\inyeccion\dependencias\extendida\Matricula.class
+com\ec\inyeccion\dependencias\framework\Main.class
 mi\primer\proyecto\js\Animal.class
 com\ec\edu\cuenta\CuentaAhorros.class
 com\ec\edu\dependencias\MainUCE.class
 com\ec\edu\inyeccion\dependencias\extendida\Direccion.class
 com\ec\edu\inyeccion\dependencias\Direccion.class
 com\ec\edu\inyeccion\dependencias\Matricula.class
+com\ec\colaborativo\MiAporte.class
 com\ec\edu\dependencias\Direccion.class
 com\ec\edu\cuenta\CuentaHabiente.class
 com\ec\edu\cuenta\MainFramework.class
@@ -27,6 +29,7 @@ com\ec\edu\inyeccion\dependencias\modelos\CuentaFuturo.class
 com\ec\edu\inyeccion\dependencias\modelos\ICuenta.class
 com\ec\edu\inyeccion\dependencias\extendida\EstudianteOdontologia.class
 com\ec\edu\dependencias\EstudianteArquitectura.class
+com\ec\inyeccion\dependencias\framework\Cuenta.class
 com\ec\edu\inyeccion\dependencias\modelos\CuentaCorrientee.class
 com\ec\edu\inyeccion\dependencias\extendida\EstudianteAdministracion.class
 mi\primer\proyecto\js\PruebaMaven.class
