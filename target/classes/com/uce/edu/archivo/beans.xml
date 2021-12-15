@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns:context="http://www.springframework.org/schema/context"
-xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="cuenta"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="12345"></property>
+		<property name="saldo" value="100"></property>
+	</bean>
+	<bean id="cuenta1"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="6789"></property>
+		<property name="saldo" value="50"></property>
+	</bean>
+	<bean id="estu"
+		class="com.ec.inyeccion.dependencias.framework.Estudiante">
+		<constructor-arg value="Jorge"></constructor-arg>
+		<constructor-arg value="Sanchez"></constructor-arg>
+		<constructor-arg value="22"></constructor-arg>
+	</bean>
+
+	<bean id="paciente" class="jorge.sanchez.Paciente">
+		<constructor-arg value="Jorge"></constructor-arg>
+		<constructor-arg value="Sanchez"></constructor-arg>
+		<constructor-arg value="22"></constructor-arg>
+	</bean>
+	<bean id="profesor" class="jorge.sanchez.Profesor">
+		<constructor-arg value="Fernando"></constructor-arg>
+		<constructor-arg value="Leon"></constructor-arg>
+		<constructor-arg value="Computacion"></constructor-arg>
+		<constructor-arg value="Politecnica"></constructor-arg>
+	</bean>
 
 </beans>
