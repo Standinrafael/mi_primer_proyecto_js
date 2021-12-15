@@ -13,7 +13,7 @@ public class Main {
 		
 		Profesor profe=(Profesor) app.getBean("Profesor");
 		System.out.println(profe.getNombre()+ " "+ profe.getApellido()+" "+ profe.getProfesion() + " "+profe.getUniversidad());
-		
+		//s
 		
 	}
 
