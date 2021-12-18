@@ -8,7 +8,7 @@ public class main {
 
 			System.out.println(" tercera preuba prueba    ");
 
-			System.out.println(" segunda prueba    ");
+			System.out.println(" segunda prueba      ");
 
 	}
 
